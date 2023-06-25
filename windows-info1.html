@@ -15,15 +15,23 @@
     <script src="js/gallery.js"></script>
 </head>
 <body>
-    <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="windows.html">&larr;</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
+  <div class="nav" id="respnav">
+    <a href="index.html" class="active">FrostWire</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sistemi Operativi
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="windows.html">Windows</a>
+        <a href="linux.html">Linux</a>
+        <a href="macos.html">macOS</a>
+        <a href="android.html">Android</a>
+        <a href="ios.html">iOS</a>
       </div>
+
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+  </div> 
       <div class="box-info">
         <h2>Storia di Windows</h2>
         <p>Sono passati più di 35 anni da quando Microsoft rivoluzionò l’informatica lanciando Windows 1.0. Da quel 20 novembre del 1985 si sono susseguite numerose versioni e interfacce utente che hanno accompagnato gli appassionati di computer. Ripercorriamo la storia del sistema operativo.<br><br>
@@ -52,20 +60,12 @@
           <div class="caption">Bill Gates - fondatore principale Software Windows</div>
         </div>
         <div>
-          <img src="img/windows/Pannello_di_controllo.jpeg" alt="Immagine 2">
-          <div class="caption"> Pannello di controllo Windows</div>
-        </div>
-        <div>
           <img src="img/windows/Building92microsoftcorporation.jpeg" alt="Immagine 2">
           <div class="caption">Entrata Building 92, uno dei principali edifici di Microsoft a Redmond</div>
         </div>
         <div>
           <img src="img/windows/Windows1.0_screenshot.gif" alt="Immagine 2">
           <div class="caption"> Sistema operativo Windows 1.0 IBM</div>
-        </div>
-        <div>
-          <img src="img/windows/MIM1interfacemanager.jpeg" alt="Immagine 2">
-          <div class="caption">Interface Manager Windows</div>
         </div>
         <div>
           <img src="img/windows/clippymascotte.jpeg" alt="Immagine 2">
@@ -79,14 +79,6 @@
           <img src="img/windows/1sistemaoperativo.jpeg" alt="Immagine 2">
           <div class="caption">Windows 1.0 - primo sistema operativo</div>
         </div>
-        <div>
-          <img src="img/windows/Altair8800primopersonalcomputer.webp" alt="Immagine 2">
-          <div class="caption">Altair 8800 - primo personal computer</div>
-        </div>
-        <div>
-          <img src="img/windows/Jobs_Gates.webp" alt="Immagine 2">
-          <div class="caption">Steve Jobs e Bill Gates</div>
-        </div>
         
       </div>
       <footer>
@@ -96,10 +88,8 @@
         <div class="footer-divider"></div>
         <div class="footer-line"></div>
         <div class="footer-text">
-            <p>Sei un appassionato d’informatica?</p>
-            <p>Ti piacerebbe collaborare con noi?</p>
-            <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-            <p>e se saremo interessati ti contatteremo!</p>
+                        <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
+
             
             <div class="footer-links">
                 <ul>
@@ -109,7 +99,8 @@
                 <ul>
                   <p>Help</p>  
                   <li><a href="domande.html">Domande Frequenti</a></li>
-                  <li><a href="contactus.html">Contattaci</a></li>
+                  
+
                 </ul>
             </div>
             <div class="footer-social">

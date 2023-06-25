@@ -15,22 +15,44 @@
     <script src="js/gallery.js"></script>
 </head>
 <body>
-    <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="macos.html">&larr;</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
+  <div class="nav" id="respnav">
+    <a href="index.html" class="active">FrostWire</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sistemi Operativi
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="windows.html">Windows</a>
+        <a href="linux.html">Linux</a>
+        <a href="macos.html">macOS</a>
+        <a href="android.html">Android</a>
+        <a href="ios.html">iOS</a>
       </div>
+
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+  </div> 
       <div class="box-info">
         <h2>Trucchi e Consigli per macOS or Mac OS X</h2>
         <p>
-            Benvenuto nel meraviglioso mondo di macOS! Se sei un utente di Mac e desideri scoprire alcuni trucchi e consigli per sfruttare al massimo il tuo sistema operativo, sei nel posto giusto. Questa guida ti fornirà suggerimenti utili per ottimizzare la tua produttività, personalizzare il tuo Mac e scoprire funzioni nascoste che renderanno la tua esperienza ancora più piacevole. Che tu sia un principiante o un utente esperto, esplora i segreti di macOS e scopri come rendere il tuo Mac un compagno potente e versatile per le tue attività quotidiane. Dai un'occhiata ai nostri trucchi e consigli e lasciati sorprendere dalle numerose possibilità che macOS ha da offrire.
+          Benvenuti nel mondo di macOS, il sistema operativo intuitivo e potente sviluppato da Apple per i suoi computer Mac. In questa breve introduzione, vi presenterò alcuni trucchi e consigli che vi aiuteranno ad utilizzare al meglio tutte le funzionalità offerte da macOS, in modo da sfruttare al massimo il vostro Mac. <br> <br>
+
+          Con macOS, potete sfruttare la funzione di ricerca Spotlight per trovare rapidamente file, applicazioni e impostazioni di sistema. Inoltre, le scorciatoie da tastiera vi consentono di risparmiare tempo, copiando e incollando facilmente elementi con un semplice comando. <br> <br>
+          
+          L'organizzazione della scrivania è fondamentale per una maggiore produttività, quindi potete creare cartelle per raggruppare file correlati e mantenere tutto in ordine. Inoltre, la funzione di "Schermo diviso" vi permette di affiancare due finestre per multitaskare senza problemi. <br> <br>
+          
+          Mission Control vi offre una panoramica di tutte le finestre e app aperte sul vostro Mac, semplificando la navigazione tra le diverse attività. Potete anche configurare il "Gestore di spazi" per assegnare applicazioni specifiche a spazi di lavoro virtuali, per una gestione ancora più efficiente. <br> <br>
+          
+          Il Centro di controllo vi offre un rapido accesso alle funzioni e impostazioni comuni, mentre Time Machine vi permette di eseguire regolari backup e recuperare facilmente i vostri file in caso di necessità. <br> <br>
+          
+          Esplorando le "Preferenze di sistema", potete personalizzare il vostro Mac in base alle vostre preferenze, regolando le impostazioni di energia, la luminosità dello schermo, il trackpad e altro ancora. <br> <br>
+          
+          Infine, l'App Store offre un'ampia selezione di app e strumenti che possono migliorare la vostra esperienza su macOS, dall'editing delle foto alla gestione delle attività. <br> <br>
+          
+          Con questi trucchi e consigli, sarete in grado di sfruttare appieno tutte le potenzialità di macOS e personalizzare il vostro Mac per adattarlo alle vostre esigenze. Siete pronti per un'esperienza ancora più fluida e produttiva con il vostro Mac e macOS? Allora, lasciatevi guidare attraverso queste utili informazioni e scoprite tutto ciò che il vostro Mac può offrire. 
         </p>
     </div>
-    <div class="container">
+    <div class="gallery-container">
         <div class="box">
             <div class="so-gold-line"></div>
             <h2>Spiegazione Scorciatoie da Tastiera</h2>
@@ -87,16 +109,12 @@
     </div>
     <div class="gallery">
         <div>
-          <img src="img/macos/cons/macrumors.webp" alt="Immagine 1">
+          <img src="img/macos/cons/macrumors.jpg" alt="Immagine 1">
           <div class="caption">Mac Rumors Forum</div>
         </div>
         <div>
           <img src="img/macos/cons/Apple2017homepage.png" alt="Immagine 2">
           <div class="caption">Apple Community Forum</div>
-        </div>
-        <div>
-          <img src="img/macos/cons/Reddit_screenshot.png" alt="Immagine 2">
-          <div class="caption">Reddit r/Mac</div>
         </div>
         <div>
           <img src="img/macos/cons/open_graph_logo.png" alt="Immagine 2">
@@ -110,10 +128,8 @@
             <div class="footer-divider"></div>
             <div class="footer-line"></div>
             <div class="footer-text">
-                <p>Sei un appassionato d’informatica?</p>
-                <p>Ti piacerebbe collaborare con noi?</p>
-                <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-                <p>e se saremo interessati ti contatteremo!</p>
+                            <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
+
                 
                 <div class="footer-links">
                     <ul>
@@ -123,7 +139,8 @@
                     <ul>
                       <p>Help</p>  
                       <li><a href="domande.html">Domande Frequenti</a></li>
-                      <li><a href="contactus.html">Contattaci</a></li>
+                      
+
                     </ul>
                 </div>
                 <div class="footer-social">

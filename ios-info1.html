@@ -15,14 +15,24 @@
     <script src="js/gallery.js"></script>
 </head>
 <body>
-    <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
+  <div class="nav" id="respnav">
+    <a href="index.html" class="active">FrostWire</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sistemi Operativi
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="windows.html">Windows</a>
+        <a href="linux.html">Linux</a>
+        <a href="macos.html">macOS</a>
+        <a href="android.html">Android</a>
+        <a href="ios.html">iOS</a>
       </div>
+
+    </div>
+  
+    <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+  </div> 
       <div class="box-info">
         <h2>Storia di iOS</h2>
         <p>iOS è il sistema operativo mobile sviluppato da Apple Inc. per i suoi dispositivi, come iPhone, iPad e iPod Touch. La storia di iOS risale al 2007, quando Apple ha presentato il primo iPhone, rivoluzionando il concetto di smartphone e introducendo un nuovo modo di interagire con i dispositivi mobili.<br><br>
@@ -45,43 +55,23 @@
     </div>
       <div class="gallery">
         <div>
-          <img src="img/iphone/stevejobs1iphone.jpeg" alt="Immagine 1">
+          <img src="img/iphone/stevejobs1iphone.jpg" alt="Immagine 1">
           <div class="caption">Steve Jobs ed il primo iphone OS</div>
         </div>
         <div>
-          <img src="img/iphone/iOS-300x300.jpeg" alt="Immagine 2">
+          <img src="img/iphone/iOS-Logo-523887275.png" alt="Immagine 2">
           <div class="caption">Logo iOS attuale</div>
         </div>
         <div>
-          <img src="img/iphone/ios_timeline_14.jpeg" alt="Immagine 2">
-          <div class="caption">Evoluzione logo iOS</div>
-        </div>
-        <div>
-          <img src="img/iphone/timelineiphone.jpeg" alt="Immagine 2">
-          <div class="caption">Evoluzione stili iPhone</div>
-        </div>
-        <div>
-          <img src="img/iphone/ios4.jpeg" alt="Immagine 2">
-          <div class="caption">iOS 4</div>
-        </div>
-        <div>
-          <img src="img/iphone/ios5.jpeg" alt="Immagine 2">
+          <img src="img/iphone/ios5.jpg" alt="Immagine 2">
           <div class="caption">iOS 5</div>
         </div>
         <div>
-          <img src="img/iphone/ios8.jpeg" alt="Immagine 2">
+          <img src="img/iphone/ios8.jpg" alt="Immagine 2">
           <div class="caption">iOS 8</div>
         </div>
         <div>
-          <img src="img/iphone/ios9.jpeg" alt="Immagine 2">
-          <div class="caption">iOS 9</div>
-        </div>
-        <div>
-          <img src="img/iphone/iOS14-iphone.webp" alt="Immagine 2">
-          <div class="caption">iOS 14</div>
-        </div>
-        <div>
-          <img src="img/iphone/ios-15-tag-300x169.webp" alt="Immagine 2">
+          <img src="img/iphone/ios-15-apple_labs-scaled-3501401296.jpg" alt="Immagine 2">
           <div class="caption">iOS 15 attuale</div>
         </div>
         
@@ -93,11 +83,7 @@
         <div class="footer-divider"></div>
         <div class="footer-line"></div>
         <div class="footer-text">
-            <p>Sei un appassionato d’informatica?</p>
-            <p>Ti piacerebbe collaborare con noi?</p>
-            <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-            <p>e se saremo interessati ti contatteremo!</p>
-            
+            <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
             <div class="footer-links">
                 <ul>
                   <p>About</p>  
@@ -106,7 +92,8 @@
                 <ul>
                   <p>Help</p>  
                   <li><a href="domande.html">Domande Frequenti</a></li>
-                  <li><a href="contactus.html">Contattaci</a></li>
+                  
+
                 </ul>
             </div>
             <div class="footer-social">

@@ -15,15 +15,24 @@
     <script src="js/gallery.js"></script>
 </head>
 <body>
-    <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="android.html">&larr;</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
+  <div class="nav" id="respnav">
+    <a href="index.html" class="active">FrostWire</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sistemi Operativi
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="windows.html">Windows</a>
+        <a href="linux.html">Linux</a>
+        <a href="macos.html">macOS</a>
+        <a href="android.html">Android</a>
+        <a href="ios.html">iOS</a>
       </div>
+
+    </div>
+  
+    <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+  </div> 
       <div class="box-info">
         <h2>Easter Egg di Android</h2>
         <p>Gli "easter egg" di Android sono delle sorprese nascoste all'interno del sistema operativo, delle piccole gemme che gli sviluppatori di Android hanno inserito per divertimento e per offrire un tocco di originalità ai dispositivi Android. <br>
@@ -60,10 +69,6 @@
           <div class="caption">Android 4.4 - KitKat Easter Egg</div>
         </div>
         <div>
-          <img src="img/android/eggs/eggs-easter-egg-android-lollipop-w628.jpg" alt="Immagine 2">
-          <div class="caption">Android 5.0 - Flappy Bird Easter Egg</div>
-        </div>
-        <div>
           <img src="img/android/eggs/eggs-Android-marshmallow-easter-egg-w782.jpg" alt="Immagine 2">
           <div class="caption">Android 6.0 - Logo M, Riferimenti a Tim Burton e il ritorno a Flappy Bird</div>
         </div>
@@ -75,26 +80,6 @@
           <img src="img/android/eggs/android-8-easter-egg-octopus-tintenfisch.jpg" alt="Immagine 2">
           <div class="caption">Android 8.0 - Octopus Easter Egg</div>
         </div>
-        <div>
-          <img src="img/android/eggs/Android-Pie-Easter-Egg-Animation.webp" alt="Immagine 2">
-          <div class="caption">Android 9.0 - Logo P Easter Egg</div>
-        </div>
-        <div>
-          <img src="img/android/eggs/android10eggs.png" alt="Immagine 2">
-          <div class="caption">Android 10 - Nonogram Puzzle Easter Egg</div>
-        </div>
-        <div>
-          <img src="img/android/eggs/eggs-easter-egg-android-lollipop-w628.jpg" alt="Immagine 2">
-          <div class="caption">Android 11 - il Ritorno del Gatto Easter Egg</div>
-        </div>
-        <div>
-          <img src="img/android/eggs/eggs-easter-egg-android-lollipop-w628.jpg" alt="Immagine 2">
-          <div class="caption">Android 12 - Colori e Material You Easter Egg</div>
-        </div>
-        <div>
-          <img src="img/android/eggs/eggs-easter-egg-android-lollipop-w628.jpg" alt="Immagine 2">
-          <div class="caption">Android 13 - Emoji Smile Easter Egg</div>
-        </div>
       </div>
       <footer>
         <div class="footer-content">
@@ -103,10 +88,8 @@
         <div class="footer-divider"></div>
         <div class="footer-line"></div>
         <div class="footer-text">
-            <p>Sei un appassionato d’informatica?</p>
-            <p>Ti piacerebbe collaborare con noi?</p>
-            <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-            <p>e se saremo interessati ti contatteremo!</p>
+                        <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
+
             <div class="footer-links">
                 <ul>
                   <p>About</p>  
@@ -115,7 +98,8 @@
                 <ul>
                   <p>Help</p>  
                   <li><a href="domande.html">Domande Frequenti</a></li>
-                  <li><a href="contactus.html">Contattaci</a></li>
+                  
+
                 </ul>
             </div>
             <div class="footer-social">

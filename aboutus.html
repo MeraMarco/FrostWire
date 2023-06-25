@@ -4,75 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FrostWire - Chi Siamo?</title>
+    <title>FrostWire - Contattaci</title>
     <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/respnav.js"></script>
-    <script src="js/godownaboutus.js"></script>
+    <script src="js/godowncontactus.js"></script>
 </head>
 <body>
     <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
+      <a href="index.html" class="active">FrostWire</a>
+      <div class="dropdown">
+        <button class="dropbtn">Sistemi Operativi
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="windows.html">Windows</a>
+          <a href="linux.html">Linux</a>
+          <a href="macos.html">macOS</a>
+          <a href="android.html">Android</a>
+          <a href="ios.html">iOS</a>
+        </div>
+
       </div>
-      <div class="header">
-        <div class="gold-line"></div>
-        <h1>Chi Siamo?</h1>
-    </div>
+      <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+    </div> 
+    
+    <div class="header">
+      <div class="gold-line"></div>
+      <h1>Chi Siamo?</h1>
+  </div>
     <div class="welcome">
-        <h1>Frostwire è gruppo composto da tre persone con la passione per l’informatica. Da anni collaboriamo per aiutare ad orientarvi nelle vostre scelte nel mondo dei Software.</h1>
+        <h1>Qui sotto troverete tutti i nostri social tramite cui potrete contattarci</h1>
         <div class="go-down" onclick="scrollToContent()">
             <h1>Vai giù &darr;</h1>
         </div>
-    </div>
-    <main>
-          <div class="row">
-            <div class="column">
-              <img src="img/aboutus/1.jpg" alt="Avatar">
-              <p>Marco D'Arrigo</p>
-            </div>
-            <div class="column">
-              <img src="img/aboutus/2.jpg" alt="Avatar"> 
-              <p>Giulia Farfariello</p>
-            </div>
-            <div class="column">
-              <img src="img/aboutus/3.jpg" alt="Avatar">
-              <p>Simona Miriana Privitera</p>
-            </div>
-          </div> 
-    </main>
-    <footer>
-        <div class="footer-content">
-            <a href="index.html" class="footer-logo">FrostWire</a>
+    </div> 
+    <div class="contact-container">
+        <div class="person">
+          <img src="img/aboutus/1.jpg" alt="Persona 1">
+          <h2>Marco D'Arrigo</h2>
+          <p>Cercami su:</p>
+          <a href="https://www.facebook.com/persona1" target="_blank">Facebook</a>
+          <a href="https://www.twitter.com/persona1" target="_blank">Twitter</a>
+          <a href="https://www.instagram.com/persona1" target="_blank">Instagram</a>
         </div>
-        <div class="footer-divider"></div>
-        <div class="footer-line"></div>
-        <div class="footer-text">
-            <p>Sei un appassionato d’informatica?</p>
-            <p>Ti piacerebbe collaborare con noi?</p>
-            <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-            <p>e se saremo interessati ti contatteremo!</p>
-            <div class="footer-links">
-                <ul>
-                  <p>About</p>  
-                  <li><a href="aboutus.html">Chi Siamo?</a></li>
-                </ul>
-                <ul>
-                  <p>Help</p>  
-                  <li><a href="domande.html">Domande Frequenti</a></li>
-                  <li><a href="contactus.html">Contattaci</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <a href="https://it-it.facebook.com/" class="social-icon"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.twitter.com" class="social-icon"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.instagram.com" class="social-icon"><i class="fa fa-instagram"></i></a>
-              </div>   
+        
+        <div class="person">
+          <img src="img/aboutus/2.jpg" alt="Persona 1">  
+          <h2>Giulia Farfariello</h2>
+          <p>Cercami su:</p>
+          <a href="https://www.facebook.com/persona2" target="_blank">Facebook</a>
+          <a href="https://www.twitter.com/persona2" target="_blank">Twitter</a>
+          <a href="https://www.instagram.com/persona2" target="_blank">Instagram</a>
         </div>
-    </footer>    
+        
+        <div class="person">
+          <img src="img/aboutus/3.jpg" alt="Persona 1">  
+          <h2>Simona Miriana Privitera</h2>
+          <p>Cercami su:</p>
+          <a href="https://www.facebook.com/persona3" target="_blank">Facebook</a>
+          <a href="https://www.twitter.com/persona3" target="_blank">Twitter</a>
+          <a href="https://www.instagram.com/persona3" target="_blank">Instagram</a>
+        </div>
+      </div>
 </body>
+<footer>
+    <div class="footer-content">
+        <a href="index.html" class="footer-logo">FrostWire</a>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-line"></div>
+    <div class="footer-text">
+        <p>Sei un appassionato d’informatica?</p>
+        <p>Ti piacerebbe collaborare con noi?</p>
+        <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
+        <p>e se saremo interessati ti contatteremo!</p>
+        <div class="footer-links">
+            <ul>
+              <p>About</p>  
+              <li><a href="aboutus.html">Chi Siamo?</a></li>
+            </ul>
+            <ul>
+              <p>Help</p>  
+              <li><a href="domande.html">Domande Frequenti</a></li>
+              
+
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="https://it-it.facebook.com/" class="social-icon"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com" class="social-icon"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com" class="social-icon"><i class="fa fa-instagram"></i></a>
+          </div>   
+    </div>
+</footer>
 </html>

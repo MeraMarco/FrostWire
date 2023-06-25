@@ -16,19 +16,28 @@
 </head>
 <body>
     <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
-      </div>
+        <a href="index.html" class="active">FrostWire</a>
+        <div class="dropdown">
+          <button class="dropbtn">Sistemi Operativi
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="windows.html">Windows</a>
+            <a href="linux.html">Linux</a>
+            <a href="macos.html">macOS</a>
+            <a href="android.html">Android</a>
+            <a href="ios.html">iOS</a>
+          </div>
+
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+      </div> 
       <div class="box-info">
         <h2>Storia di macOS</h2>
         <p>
-            La storia di macOS è strettamente legata alla storia di Apple Inc. e il sistema operativo è stato creato principalmente dal team di sviluppo interno di Apple. Uno dei nomi più influenti nella creazione di macOS è quello di Steve Jobs, il co-fondatore di Apple. Durante il suo ritorno in Apple negli anni '90, Jobs ha guidato il processo di sviluppo del nuovo sistema operativo Mac OS X, che ha rappresentato una svolta significativa per l'azienda.<br>
-            Il progetto Mac OS X è stato avviato sotto la direzione di Jobs e di Wozniak e ha coinvolto un gruppo di ingegneri e sviluppatori guidati da Bertrand Serlet, che è stato uno dei principali architetti del sistema operativo. Serlet ha giocato un ruolo fondamentale nello sviluppo del nuovo sistema, portando all'adozione di un nucleo Unix chiamato Darwin e all'implementazione dell'interfaccia Aqua.<br>
-            Oltre a Jobs e Serlet, ci sono state numerose altre figure chiave nel processo di sviluppo di macOS, come Avie Tevanian, ex Chief Software Technology Officer di Apple, che ha avuto un ruolo significativo nello sviluppo del sistema operativo.<br>
+            La storia di macOS è strettamente legata alla storia di Apple Inc. e il sistema operativo è stato creato principalmente dal team di sviluppo interno di Apple. Uno dei nomi più influenti nella creazione di macOS è quello di Steve Jobs, il co-fondatore di Apple. Durante il suo ritorno in Apple negli anni '90, Jobs ha guidato il processo di sviluppo del nuovo sistema operativo Mac OS X, che ha rappresentato una svolta significativa per l'azienda.<br> <br> <br>
+            Il progetto Mac OS X è stato avviato sotto la direzione di Jobs e di Wozniak e ha coinvolto un gruppo di ingegneri e sviluppatori guidati da Bertrand Serlet, che è stato uno dei principali architetti del sistema operativo. Serlet ha giocato un ruolo fondamentale nello sviluppo del nuovo sistema, portando all'adozione di un nucleo Unix chiamato Darwin e all'implementazione dell'interfaccia Aqua.<br><br> <br>
+            Oltre a Jobs e Serlet, ci sono state numerose altre figure chiave nel processo di sviluppo di macOS, come Avie Tevanian, ex Chief Software Technology Officer di Apple, che ha avuto un ruolo significativo nello sviluppo del sistema operativo.<br><br> <br>
             È importante sottolineare che macOS è un prodotto sviluppato da un team di ingegneri e sviluppatori altamente qualificati presso Apple, con contributi significativi da parte di diverse persone nel corso degli anni. Il loro impegno e la loro creatività hanno portato alla creazione e all'evoluzione di macOS come lo conosciamo oggi.
         </p>
       </div>
@@ -61,10 +70,8 @@
         <div class="footer-divider"></div>
         <div class="footer-line"></div>
         <div class="footer-text">
-            <p>Sei un appassionato d’informatica?</p>
-            <p>Ti piacerebbe collaborare con noi?</p>
-            <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-            <p>e se saremo interessati ti contatteremo!</p>
+                        <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
+
             
             <div class="footer-links">
                 <ul>
@@ -74,7 +81,8 @@
                 <ul>
                   <p>Help</p>  
                   <li><a href="domande.html">Domande Frequenti</a></li>
-                  <li><a href="contactus.html">Contattaci</a></li>
+                  
+
                 </ul>
             </div>
             <div class="footer-social">

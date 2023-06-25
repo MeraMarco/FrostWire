@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 html, body {
-    font-family: Arial, sans-serif;
+    margin: 0 0;
     height: 100%;
     background-color: black;
   }
@@ -8,6 +10,7 @@ html, body {
     flex-direction: column;
     min-height: 100vh;
     padding-bottom: 80px;
+    font-size: inherit;
   }
   .header {
     text-align: center;
@@ -16,6 +19,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: inherit;
   }
   .gold-line {
     width: 150px;
@@ -54,18 +58,19 @@ html, body {
     text-align: center;
     color: white;
     margin-top: 0;
-    padding: 0 30%;
+    padding: 0 5%;
   }
   .welcome h1{
+    font-size: 24px;
     margin-top: 10px;
-    text-align: left;
+    text-align: center;
     text-size-adjust: auto;
   }
   .info-so {
     text-align: center;
     color: white;
     margin-top: 0;
-    padding: 0 30%;
+    padding: 0 10%;
   }
   .info-so h1{
     margin-top: 10px;
@@ -85,32 +90,78 @@ html, body {
     margin-right: 10px;
     margin-bottom: 0;
   }
-  .nav{
-    overflow: hidden;
-    text-align: center;
-  }
-  .nav a{
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 25px;
-  }
-  .nav a:hover {
+  .go-down h1:hover{
     color: goldenrod;
+    cursor: pointer;
   }
-  .nav a.center{
-    font-size: 17px;
-    float: right;
-    color: white;
+
+  .nav {
+  overflow: hidden;
   }
-  .nav a:hover.center{
-    color: gold;
+
+  .nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; 
   }
+
+  .active {
+  color: black;  
+  }
+
   .nav .icon {
-    display: none;
+  display: none;
   }
+
+  .dropdown {
+  float: right;
+  overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+  font-size: inherit;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+  }
+
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+
+  .dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+
+  .nav a:hover, .dropdown:hover .dropbtn {
+  color: goldenrod;
+  }
+
+  .dropdown-content a:hover {
+  background-color: black;
+  color: goldenrod;
+  }
+
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+
   img {
     max-width: 100%; 
     display: block; 
@@ -144,9 +195,11 @@ html, body {
     margin-bottom: 120px;
   }
   .os-card .immagine{
-    width: 2000px;
-    height: 25px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
+
   .os-gold-line{
     width: 50px;
     height: 5px;
@@ -179,16 +232,28 @@ html, body {
     margin: 0 10px;
     margin-bottom: auto;
   }
+  .os-text-info a:hover{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    margin-bottom: auto;
+    font-style: italic;
+    font-weight: bolder;
+  }
   footer {
     background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
+    margin: 0 auto;
   }
   
   .container {
+    width: 1000px;
+    height: 1000px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
   } 
   .box {
     flex: 1 0 300px;
@@ -216,32 +281,67 @@ html, body {
     font-size: 18px;
     text-decoration: none;
   }
+  .box a:hover{
+    color: white;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
   .box-info {
-    padding: 5px;
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 10px;
     border: 5px solid goldenrod;
     border-radius: 5px;
-    margin-bottom: 75px;
+    margin-top: 10px;
   }
   
   .box-info h2 {
+    margin: 0 auto;
     text-align: center;
-    font-size: 24px;
+    font-size: 36px;
     color: goldenrod;
   }
   
   .box-info p {
-    font-size: 16px;
+    padding-bottom: 250px;
+    margin-bottom: 250px;
+    font-size: 18px;
     color: white;
   }
+  .gallery-container {
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+  .gallery-2 {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+  }
+  .gallery-2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .gallery-2 .prev-button,
+  .gallery-2 .next-button {
+  display: inline-block;
+  margin-right: 100px;
+}
+
   .gallery {
     position: relative;
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    z-index: 2;
   }
   
   .gallery img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
   .gallery .prev-button,
@@ -260,6 +360,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
   }
   .footer-content {
     display: flex;
@@ -273,11 +374,18 @@ html, body {
     font-size: 20px;
     margin-right: auto;
   }
+  .footer-logo:hover {
+    color: goldenrod;
+  }
   .footer-form {
     color: goldenrod;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
+  }
+  .footer-form:hover {
+    color: white;
+    font-size: 22px;
   }
   .footer-line {
     width: 100%;
@@ -327,6 +435,10 @@ html, body {
     text-decoration: none;
     font-size: 18px;
   }
+  .footer-links a:hover {
+    color: goldenrod;
+    font-style: oblique;
+  }
   .footer-links p{
     color: goldenrod;
     font-size: 20px;
@@ -361,10 +473,11 @@ html, body {
     margin-bottom: 5px;
   }
   .person img{
-    width: 640px;
-    height: 480px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
-    border-radius: 50%;
+    border: 5px solid goldenrod;
+    border-radius: 15px;
   }
   .person a {
     display: block;
@@ -395,7 +508,7 @@ html, body {
   
   .faq p {
     color: white;
-    margin: 0;
+    margin: 0 auto;
   }
   input[type=text], select, textarea {
     width: 100%; 
@@ -419,199 +532,293 @@ html, body {
     background-color: goldenrod;
 }
   .containerform {
-
     color: white;
     background-color: black;
     padding: 20px;
 } 
-  
+@media screen and (max-width: 768px) {
+  .nav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .nav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .nav.responsive .dropdown {float: none;}
+  .nav.responsive .dropdown-content {position: relative;}
+  .nav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .nav.responsive .dropdown {float: none;}
+  .nav.responsive .dropdown-content {position: relative;}
+  .nav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
   @media screen and (max-width: 600px) {
-    .nav a:not(:first-child) {display: none;}
-    .nav a.icon {
-      float: right;
-      display: block;
-    }
     .person img{
-      width: 360px;
-      height: 240px;
+      max-width: 100%;
+      height: auto;
       object-fit: cover;
       border-radius: 50%;
     }
     .column img{
-      width: 360px;
-      height: 240px;
+      max-width: 100%;
+      height: auto;
       object-fit: cover;
       border-radius: 50%;
+    }
+
+    .welcome {
+      text-align: center;
+      color: white;
+      margin-top: 0;
+      padding: 0 5%;
     }
   }
 
-  @media screen and (max-width: 600px) {
-    .nav.responsive {position: relative;}
-    .nav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .person img{
-      width: 360px;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-    .column img{
-      width: 360px;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-  }
   @media screen and (max-width: 768px) {
-    .nav a:not(:first-child) {display: none;}
-    .nav a.icon {
-      float: right;
-      display: block;
-    }
     img {
       max-width: 100%; 
       display: block; 
     }
     .person img{
-      width: 360px;
-      height: 240px;
+      max-width: 100%;
+      height: auto;
       object-fit: cover;
-      border-radius: 50%;
+      border: 5px solid goldenrod;
     }
     .column img{
-      width: 360px;
-      height: 240px;
+      max-width: 100%;
+      height: auto;
       object-fit: cover;
       border-radius: 50%;
     }
-  }
-  @media screen and (max-width: 768px) {
-    .nav.responsive {position: relative;}
-    .nav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    img {
-      max-width: 100%; 
-      display: block; 
-    }
-    .person img{
-      width: 360px;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-    .column img{
-      width: 360px;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 50%;
+    .welcome {
+      text-align: center;
+      color: white;
+      margin-top: 0;
+      padding: 0 5%;
     }
   }
   
   @media screen and (max-width: 480px) {
-    .nav a:not(:first-child) {display: none;}
-    .nav a.icon {
-      float: right;
-      display: block;
-    }
     img {
       max-width: 100%; 
       display: block; 
     }
     .person img{
-      width: 360px;
-      height: 240px;
+      max-width: 100%;
+      height: auto;
       object-fit: cover;
-      border-radius: 50%;
+      border: 5px solid goldenrod;
     }
     .column img{
-      width: 360px;
-      height: 240px;
+      max-width: 100%;
+      height: auto;
       object-fit: cover;
       border-radius: 50%;
     }
-  }
-  @media screen and (max-width: 480px) {
-    .nav a:not(:first-child) {display: none;}
-    .nav a.icon {
-      float: right;
-      display: block;
-    }
-    img {
-      max-width: 100%; 
-      display: block; 
-    }
-    .person img{
-      width: 360px;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-    .column img{
-      width: 360px;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 50%;
+    .welcome {
+      text-align: center;
+      color: white;
+      margin-top: 0;
+      padding: 0 5%;
     }
   }
   @media screen and (max-width: 768px) {
-    .footer-content {
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 15px;
+    .person img{
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      border: 5px solid goldenrod;
     }
-  
-    .footer-text {
-      margin-bottom: 15px;
+    .column img{
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
     }
-  
-    .footer-links {
-      margin-bottom: 10px;
+
+    .welcome {
+      text-align: center;
+      color: white;
+      margin-top: 0;
+      padding: 0 5%;
     }
-  
+  }
+  @media (max-width: 800px) {
+    .container {
+      width: fit-content;
+      height: min-content;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 1080px) {
+    .container {
+      width: fit-content;
+      height: min-content;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+    .footer-links ul {
+      margin: 0;
+    }
     .footer-links ul li {
-      margin-right: 10px;
-      margin-bottom: 15px;
-    }
-  
-    .footer-social {
+      margin-right: 0;
       margin-bottom: 10px;
-    }
-  
-    .social-icon {
-      margin: 0 5px;
-      font-size: 25px;
-    }
-  
-    .footer-text p {
-      margin: 15px 0; 
-    }
-    .person img{
-      width: 360px;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-    .column img{
-      width: 360px;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 50%;
     }
   }
   
+  @media screen and (max-width: 1024px) {
+    .footer-links ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 768px) {
+    .box-info {
+      width: 80%;
+      height: auto;
+      padding: 10px;
+    }
+    
+    .box-info h2 {
+      font-size: 24px;
+    }
+    
+    .box-info p {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 1080px) {
+    .box-info {
+      width: 80%;
+      height: auto;
+      padding: 10px;
+    }
+    
+    .box-info h2 {
+      font-size: 24px;
+    }
+    
+    .box-info p {
+      font-size: 14px;
+    }
+  }
+  
+@media screen and (max-width: 768px) {
+  .os-card {
+    flex-direction: column;
+  }
+
+  .os-card .immagine {
+    margin-bottom: 10px;
+  }
+
+  .os-info {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .os-info h2 {
+    font-size: 14px;
+  }
+
+  .os-card .immagine {
+    max-width: 25%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .os-card .os-text-info p {
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .os-text-info a {
+    font-size: 14px;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .os-card {
+    flex-direction: column;
+  }
+
+  .os-card .immagine {
+    max-width: 15%;
+    height: auto;
+    margin-bottom: 10px;
+    margin: 0 auto;
+  }
+
+  .os-info {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .os-info h2 {
+    font-size: 14px;
+  }
+
+  .os-card .os-text-info p {
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .os-text-info a {
+    font-size: 14px;
+    margin: 5px;
+  }
+}
+

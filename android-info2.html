@@ -15,15 +15,24 @@
     <script src="js/gallery.js"></script>
 </head>
 <body>
-    <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="android.html">&larr;</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
+  <div class="nav" id="respnav">
+    <a href="index.html" class="active">FrostWire</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sistemi Operativi
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="windows.html">Windows</a>
+        <a href="linux.html">Linux</a>
+        <a href="macos.html">macOS</a>
+        <a href="android.html">Android</a>
+        <a href="ios.html">iOS</a>
       </div>
+
+    </div>
+    
+    <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+  </div> 
       <div class="box-info">
         <h2>il Design di Android</h2>
         <p>Il design grafico di Android è stato oggetto di notevoli cambiamenti nel corso degli anni, con l'obiettivo di creare un'interfaccia intuitiva, esteticamente piacevole e coerente in tutto il sistema operativo.<br>
@@ -44,35 +53,35 @@
           <div class="caption">Material Design</div>
         </div>
         <div>
-          <img src="img/android/Android_1.0.webp" alt="Immagine 2">
+          <img src="img/android/Android_1.0.jpg" alt="Immagine 2">
           <div class="caption">Android 1.0 - Conteneva solo alcune app e non aveva alcun codename</div>
         </div>
         <div>
-          <img src="img/android/android-versions-gingerbread-100740917-large.webp" alt="Immagine 2">
+          <img src="img/android/android-versions-gingerbread-100740917-large.jpg" alt="Immagine 2">
           <div class="caption">Android 2.3 - Leggero cambiamento grafico e più funzionalità</div>
         </div>
         <div>
-          <img src="img/android/android-versions-honeycomb-100740918-large.webp" alt="Immagine 2">
+          <img src="img/android/android-versions-honeycomb-100740918-large.jpg" alt="Immagine 2">
           <div class="caption">Android 3.2 - L'inizio verso l'era moderna</div>
         </div>
         <div>
-          <img src="img/android/android-versions-ice-cream-sandwich-100740919-large.webp" alt="Immagine 2">
+          <img src="img/android/android-versions-ice-cream-sandwich-100740919-large.jpg" alt="Immagine 2">
           <div class="caption">Android 4.0 - Sempre più funzionalità</div>
         </div>
         <div>
-          <img src="img/android/android-versions-kitkat-100740921-large.webp" alt="Immagine 2">
+          <img src="img/android/android-versions-kitkat-100740921-large.jpg" alt="Immagine 2">
           <div class="caption">Android 4.4 - Nuova Veste</div>
         </div>
         <div>
-          <img src="img/android/android-versions-marshmallow-2-100740923-large.webp" alt="Immagine 2">
+          <img src="img/android/android-versions-marshmallow-2-100740923-large.jpg" alt="Immagine 2">
           <div class="caption">Android 6.0</div>
         </div>
         <div>
-          <img src="img/android/android-versions-nougat-2-100740924-large.webp" alt="Immagine 2">
+          <img src="img/android/android-versions-nougat-2-100740924-large.jpg" alt="Immagine 2">
           <div class="caption">Android 7.0 - Un altro cambiamento grafico</div>
         </div>
         <div>
-          <img src="img/android/android-versions-pie-100766995-large.webp" alt="Immagine 2">
+          <img src="img/android/android-versions-pie-100766995-large.jpg" alt="Immagine 2">
           <div class="caption">Android 9.0 - Ha sistemato la maggior parte dei bug delle precedenti versioni</div>
         </div>
         <div>
@@ -91,10 +100,8 @@
         <div class="footer-divider"></div>
         <div class="footer-line"></div>
         <div class="footer-text">
-            <p>Sei un appassionato d’informatica?</p>
-            <p>Ti piacerebbe collaborare con noi?</p>
-            <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-            <p>e se saremo interessati ti contatteremo!</p>
+                        <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
+
             <div class="footer-links">
                 <ul>
                   <p>About</p>  
@@ -103,7 +110,8 @@
                 <ul>
                   <p>Help</p>  
                   <li><a href="domande.html">Domande Frequenti</a></li>
-                  <li><a href="contactus.html">Contattaci</a></li>
+                  
+
                 </ul>
             </div>
             <div class="footer-social">

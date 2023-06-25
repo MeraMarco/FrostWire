@@ -13,25 +13,31 @@
 </head>
 <body>
     <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
-      </div>
+        <a href="index.html" class="active">FrostWire</a>
+        <div class="dropdown">
+          <button class="dropbtn">Sistemi Operativi
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="windows.html">Windows</a>
+            <a href="linux.html">Linux</a>
+            <a href="macos.html">macOS</a>
+            <a href="android.html">Android</a>
+            <a href="ios.html">iOS</a>
+          </div>
+
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+      </div> 
+
       <div class="header">
         <div class="gold-line"></div>
         <h1>Scheda Tecnica - Linux</h1>
     </div>
     <div class="info-so">
         <h1>GNU/Linux è un sistema operativo gratuito e aperto che ti permette di usare il tuo computer. È come il cuore del computer che fa funzionare tutto. Puoi personalizzarlo come vuoi e ha molte applicazioni disponibili. È anche sicuro e può far lavorare molte cose contemporaneamente. Funziona su diversi tipi di computer e macchine.</h1>
-        <div class="go-down" onclick="scrollToContent()"<div class="email-bar">
-          <div class="email-input">
-          <input type="email" placeholder="Indirizzo Email">
-          <button>Invia</button>
           </div>
-      </div>
+      <div class="go-down" onclick="scrollToContent()">
             <h1>Vai giù &darr;</h1>
         </div>
     </div>
@@ -91,10 +97,8 @@
         <div class="footer-divider"></div>
         <div class="footer-line"></div>
         <div class="footer-text">
-            <p>Sei un appassionato d’informatica?</p>
-            <p>Ti piacerebbe collaborare con noi?</p>
-            <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-            <p>e se saremo interessati ti contatteremo!</p>
+                        <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
+
             
             <div class="footer-links">
                 <ul>
@@ -104,7 +108,8 @@
                 <ul>
                   <p>Help</p>  
                   <li><a href="domande.html">Domande Frequenti</a></li>
-                  <li><a href="contactus.html">Contattaci</a></li>
+                  
+
                 </ul>
             </div>
             <div class="footer-social">

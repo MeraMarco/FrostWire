@@ -15,15 +15,23 @@
     <script src="js/gallery.js"></script>
 </head>
 <body>
-    <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="windows.html">&larr;</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
+  <div class="nav" id="respnav">
+    <a href="index.html" class="active">FrostWire</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sistemi Operativi
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="windows.html">Windows</a>
+        <a href="linux.html">Linux</a>
+        <a href="macos.html">macOS</a>
+        <a href="android.html">Android</a>
+        <a href="ios.html">iOS</a>
       </div>
+
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+  </div> 
       <div class="box-info">
         <h2>Trucchi e Consigli per Windows</h2>
         <p>
@@ -39,7 +47,7 @@
             Windows è un sistema operativo incredibilmente  personalizzabile. Sperimenta, esplora e divertiti nel trovare nuovi trucchi e consigli che si adattino alle tue esigenze. 
         </p>
     </div>
-    <div class="container">
+    <div class="gallery-container">
         <div class="box">
             <div class="so-gold-line"></div>
             <h2>Spiegazione Comandi Base per il terminale</h2>
@@ -125,14 +133,6 @@
     </div>
     <div class="gallery">
         <div>
-          <img src="img/windows/prodotti windows 265.png" alt="Immagine 1">
-          <div class="caption">Windows 365</div>
-        </div>
-        <div>
-          <img src="img/windows/windows365.png" alt="Immagine 2">
-          <div class="caption">Dynamic 365</div>
-        </div>
-        <div>
           <img src="img/windows/comunitwindoes.png" alt="Immagine 2">
           <div class="caption">Comunity Windows</div>
         </div>
@@ -140,10 +140,7 @@
           <img src="img/windows/forum cdentrale.png" alt="Immagine 2">
           <div class="caption">Forum centrale novità e dubbi Windows</div>
         </div>
-        <div>
-            <img src="img/windows/Schermata 2023-06-05 alle 02.56.04.png" alt="Immagine 2">
-            <div class="caption">Community del supporto Microsoft</div>
-          </div>
+       
         
     </div>
         <footer>
@@ -153,10 +150,8 @@
             <div class="footer-divider"></div>
             <div class="footer-line"></div>
             <div class="footer-text">
-                <p>Sei un appassionato d’informatica?</p>
-                <p>Ti piacerebbe collaborare con noi?</p>
-                <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-                <p>e se saremo interessati ti contatteremo!</p>
+                            <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
+
                 
                 <div class="footer-links">
                     <ul>
@@ -166,7 +161,8 @@
                     <ul>
                       <p>Help</p>  
                       <li><a href="domande.html">Domande Frequenti</a></li>
-                      <li><a href="contactus.html">Contattaci</a></li>
+                      
+
                     </ul>
                 </div>
                 <div class="footer-social">

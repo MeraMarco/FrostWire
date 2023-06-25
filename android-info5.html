@@ -15,50 +15,75 @@
     <script src="js/gallery.js"></script>
 </head>
 <body>
-    <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="android.html">&larr;</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
+  <div class="nav" id="respnav">
+    <a href="index.html" class="active">FrostWire</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sistemi Operativi
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="windows.html">Windows</a>
+        <a href="linux.html">Linux</a>
+        <a href="macos.html">macOS</a>
+        <a href="android.html">Android</a>
+        <a href="ios.html">iOS</a>
       </div>
+
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+  </div> 
       <div class="box-info">
         <h2>Trucchi e Consigli per Android</h2>
         <p>
-            Quando si tratta di Android, ci sono numerosi trucchi e consigli che possono rendere il tuo utilizzo del dispositivo ancora più piacevole ed efficiente. Conoscere queste "chicche" ti consentirà di sfruttare al meglio le potenzialità del tuo smartphone o tablet Android.<br>
-            Uno dei primi aspetti da considerare è l'organizzazione del tuo schermo principale. Personalizza la disposizione delle icone, crea cartelle per organizzare le app in categorie e aggiungi widget utili per un accesso rapido alle informazioni più importanti. Inoltre, puoi trascinare le app preferite nella barra delle app rapide nella parte inferiore dello schermo per averle sempre a portata di mano.<br>
-            Un altro suggerimento utile riguarda la gestione delle notifiche. Puoi personalizzare le impostazioni delle notifiche per ciascuna app, decidendo quali desideri visualizzare sullo schermo di blocco o nella barra delle notifiche. Inoltre, puoi stabilire le priorità delle notifiche per le app più rilevanti e persino personalizzare suoni e vibrazioni associati alle notifiche.<br>
-            Per un'esperienza d'uso più efficiente. Android offre diverse scorciatoie che consentono di eseguire rapidamente azioni come accedere alle impostazioni, tornare alla schermata principale o catturare uno screenshot. Esplora le opzioni delle scorciatoie nel menu delle impostazioni per personalizzarle in base alle tue preferenze.<br>
-            Per proteggere la tua privacy e la sicurezza del dispositivo, assicurati di utilizzare un blocco schermo sicuro. Puoi scegliere tra PIN, password, riconoscimento facciale o impronta digitale. Inoltre, attiva la crittografia dei dati per una maggiore protezione.<br>
-            Infine, non dimenticare di esplorare il Google Play Store, dove troverai una vasta selezione di app e giochi. Consulta le app consigliate, leggi le recensioni degli utenti e scopri nuove applicazioni che possono migliorare la tua produttività, offrire intrattenimento o soddisfare i tuoi interessi specifici.<br>
-            Questi sono solo alcuni dei trucchi e consigli che puoi applicare su Android per personalizzare il tuo dispositivo e ottimizzare la tua esperienza. Esplora le opzioni disponibili nel menu delle impostazioni, sperimenta con nuove app e scopri cosa funziona meglio per te. Con un po' di curiosità ed esplorazione, puoi trasformare il tuo dispositivo Android in uno strumento potente e personalizzato che ti accompagna nelle tue attività quotidiane.
+          Benvenuti nel mondo di Android, il sistema operativo mobile più diffuso al mondo. In questa introduzione, vi presenterò alcuni trucchi e consigli che vi aiuteranno a sfruttare al meglio le potenzialità del vostro dispositivo Android. <br> <br>
+
+          Android offre una vasta gamma di funzionalità personalizzabili e una vasta selezione di app disponibili su Google Play Store. Una delle prime cose da fare è esplorare le impostazioni del vostro dispositivo per personalizzarlo secondo le vostre preferenze. Potete regolare la luminosità dello schermo, le notifiche, i suoni e molto altro ancora.<br> <br>
+
+          Per accedere rapidamente alle app più utilizzate, potete aggiungere widget sulla schermata principale del vostro dispositivo Android. In questo modo, avrete un accesso rapido alle informazioni importanti e alle funzioni delle app senza doverle aprire.<br> <br>
+
+          Utilizzando le scorciatoie delle app, potete accedere alle funzioni principali di un'app con un semplice tocco o gesto. Ad esempio, potete premere a lungo sull'icona dell'app della fotocamera per scattare una foto immediatamente.<br> <br>
+
+          Grazie alla funzione di ricerca di Google integrata in Android, potete trovare rapidamente informazioni, contatti, app e molto altro. Basta toccare l'icona della ricerca nella schermata principale o utilizzare il widget di ricerca Google per accedere alle risorse online.<br> <br>
+
+          Per una maggiore produttività, potete utilizzare la funzione di "Schermo diviso" per visualizzare e utilizzare contemporaneamente due app sullo stesso schermo. Basta toccare il pulsante di recente app (o il pulsante dedicato sulla barra di navigazione) e trascinare l'app desiderata verso il lato dello schermo.<br> <br>
+
+          Android offre anche una serie di funzioni di sicurezza, come il riconoscimento dell'impronta digitale, il riconoscimento del viso o la scansione dell'iride per sbloccare il vostro dispositivo in modo rapido e sicuro.<br> <br>
+
+          Per risparmiare batteria, potete utilizzare la modalità risparmio energetico o ottimizzare le impostazioni delle app per limitarne l'utilizzo in background.<br> <br>
+
+          Infine, per tenere il vostro dispositivo Android sempre aggiornato e al sicuro, è importante installare regolarmente gli aggiornamenti del sistema operativo e delle app disponibili.<br> <br>
+
+          Con questi trucchi e consigli, potrete sfruttare al meglio il vostro dispositivo Android, personalizzarlo secondo le vostre esigenze e rendere la vostra esperienza mobile ancora più efficiente e piacevole. Esplorate le funzionalità del vostro dispositivo e scoprite tutte le possibilità offerte da Android.
         </p>
     </div>
-    <div class="container">
+    <div id="img-container" class="gallery-container">
         <div class="box">
             <div class="so-gold-line"></div>
             <h2>Qualche Trucco per Android</h2>
             <p>
-                Liberare spazio di archiviazione: Per liberare spazio sul tuo dispositivo Android, puoi iniziare rimuovendo le app che non utilizzi più. Vai alle impostazioni e seleziona "App" o "Gestione app" per visualizzare l'elenco delle app installate. Da qui, puoi selezionare le app che desideri disinstallare. Inoltre, puoi trasferire le foto, i video e altri file su un'unità di archiviazione esterna o nel cloud, utilizzare app per la pulizia della cache o cancellare i file temporanei accumulati.<br><br>
-                Modalità "Guest" o utenti multipli: Se desideri condividere il tuo dispositivo con altre persone, puoi utilizzare la modalità "Guest" o creare utenti multipli. Vai alle impostazioni e cerca "Utenti" o "Utenti e account". Da qui, puoi aggiungere un nuovo utente o attivare la modalità "Guest". Questo ti consentirà di mantenere i tuoi dati personali separati e offrire una modalità sicura per gli altri utenti.<br><br>
-                Sfruttare le gesture di navigazione: Molte versioni di Android offrono opzioni di navigazione basate su gesture. Questo significa che puoi navigare nel tuo dispositivo utilizzando semplici movimenti del dito anziché i tradizionali pulsanti di navigazione. Vai alle impostazioni, cerca "Gestione gesti" o "Navigazione gestuale" e attiva questa funzionalità. Sperimenta con le diverse gesture come lo swipe verso l'alto per tornare alla schermata home o lo swipe laterale per passare tra le app recenti.<br><br>
-                Risparmio energetico: Per prolungare la durata della batteria del tuo dispositivo Android, puoi attivare la modalità risparmio energetico. Questa opzione riduce le prestazioni del dispositivo e limita alcune funzionalità non essenziali per ridurre il consumo energetico. Vai alle impostazioni e cerca "Batteria" o "Risparmio energetico" per attivare questa modalità. Inoltre, puoi disattivare le notifiche push per le app che non richiedono aggiornamenti in tempo reale e ridurre la luminosità dello schermo per risparmiare energia.<br><br>       
-                Personalizzazione con launcher: Se desideri un'esperienza di utilizzo più personalizzata, puoi installare un launcher di terze parti. I launcher ti consentono di modificare l'aspetto del tuo schermo home, aggiungere widget, cambiare gli effetti di transizione e molto altro. Esistono molti launcher disponibili sul Google Play Store, come Nova Launcher, Apex Launcher o Microsoft Launcher. Installa il launcher che preferisci, quindi personalizza il tuo schermo home secondo le tue preferenze.<br><br>  
-                Ricorda che i trucchi possono variare a seconda della versione di Android e del dispositivo utilizzato. Esplora le impostazioni del tuo dispositivo Android per scoprire ulteriori opzioni e funzionalità nascoste. Sperimenta e trova i trucchi che rendono l'esperienza di utilizzo del tuo dispositivo Android più piacevole e personalizzata.
+              Scopri alcuni trucchi per sfruttare al meglio Android: <br><br>
+
+              Utilizza le gesture di navigazione per muoverti rapidamente tra le app. <br>
+              Personalizza la schermata principale con cartelle, widget e nuovi launcher. <br>
+              Ottimizza la durata della batteria disattivando funzioni non necessarie. <br>
+              Personalizza le impostazioni di notifica per gestire meglio le notifiche. <br>
+              Sfrutta le app di automazione per automatizzare azioni comuni.
             </p>
           </div>
           <div class="box">
             <div class="so-gold-line"></div>
             <h2>Qualche Trucco più Avanzato</h2>
             <p>
-                Modalità sviluppatore: Attivare la modalità sviluppatore sul tuo dispositivo Android ti dà accesso a una serie di impostazioni avanzate. Per attivarla, vai alle impostazioni e cerca "Informazioni sul telefono" o "Informazioni sul dispositivo". Tocca ripetutamente il numero di build del software fino a quando non viene visualizzato un messaggio di conferma. Ora torna alle impostazioni principali e troverai la nuova opzione "Opzioni sviluppatore". Da qui, puoi abilitare funzioni come il debug USB, la visualizzazione delle impostazioni di rendering, le tracce di input e molto altro.<br><br>
-                Automatizzazione con Tasker: Tasker è un'applicazione avanzata per l'automazione su Android. Ti consente di creare e personalizzare azioni automatizzate in base a determinati trigger o condizioni. Ad esempio, puoi configurare il tuo dispositivo per inviare un messaggio di testo automatico quando ricevi una chiamata persa, attivare il Wi-Fi quando sei a casa o avviare determinate app in base alla tua posizione. Tasker offre un'ampia gamma di opzioni e può essere estremamente potente per personalizzare il tuo dispositivo Android.<br><br>
-                Utilizzo di ADB (Android Debug Bridge): ADB è uno strumento di sviluppo che consente di comunicare con il tuo dispositivo Android tramite il computer. Puoi utilizzare ADB per eseguire comandi avanzati, trasferire file, registrare lo schermo, modificare impostazioni di sistema e molto altro. Per utilizzare ADB, è necessario abilitare il debug USB nel menu delle impostazioni dello sviluppatore (come spiegato nel primo punto). Successivamente, puoi collegare il tuo dispositivo Android al computer tramite cavo USB e utilizzare il terminale o l'interfaccia ADB per interagire con il dispositivo.<br><br>
-                Personalizzazione con modding: Android è noto per la sua natura aperta e la possibilità di personalizzare il sistema operativo attraverso il modding. Puoi installare una recovery personalizzata come TWRP (Team Win Recovery Project) sul tuo dispositivo Android per sbloccare funzionalità avanzate come l'installazione di ROM personalizzate, il rooting del dispositivo o l'installazione di mod e temi. Tuttavia, il modding può comportare rischi e invalidare la garanzia del dispositivo, quindi è importante eseguire ricerche approfondite e seguire le istruzioni corrette per il tuo dispositivo specifico.<br><br>
-                Gestione avanzata delle app: Android offre anche opzioni avanzate per la gestione delle app. Puoi accedere alle impostazioni avanzate delle app andando a "Impostazioni" e selezionando "App" o "Gestione app". Da qui, puoi visualizzare e gestire le app installate, controllare le autorizzazioni delle app, disabilitare app di sistema indesiderate o ottimizzare l'utilizzo della memoria delle app. Puoi anche esplorare app di terze parti come Greenify o SD Maid per migliorare le prestazioni e la gestione delle app sul tuo dispositivo Android.<br><br>
-                Ricorda che l'utilizzo di trucchi avanzati su Android richiede una buona conoscenza del sistema operativo e può comportare rischi. Assicurati di eseguire ricerche approfondite, seguire le istruzioni corrette per il tuo dispositivo specifico e fare sempre un backup dei dati importanti prima di eseguire qualsiasi procedura avanzata.
+              Scopri alcuni trucchi avanzati per sfruttare al massimo il tuo dispositivo Android: <br><br>
+
+              Utilizza l'app Tasker per creare scenari personalizzati in base a vari trigger, come la posizione, l'ora o le app aperte. Ad esempio, puoi impostare il telefono in modalità silenziosa quando sei al lavoro. <br>
+              Abilita la modalità di sviluppatore nelle impostazioni di Android per accedere a opzioni avanzate, come il debugging USB e le impostazioni di animazione. Ciò ti permette di personalizzare ulteriormente il tuo dispositivo e ottimizzare le prestazioni. <br>
+              Utilizza le app di gestione dei file come Solid Explorer o FX File Explorer per avere un maggiore controllo sui file del tuo dispositivo, consentendoti di esplorare, copiare, spostare o eliminare i file in modo più efficace. <br>
+              Sfrutta l'app Tasker insieme all'app AutoVoice per controllare il tuo dispositivo tramite comandi vocali personalizzati. Puoi creare comandi vocali per avviare app, eseguire azioni specifiche o controllare impostazioni del telefono. <br>
+              Utilizza la funzione "Multi-Finestra" disponibile su alcuni dispositivi Android per eseguire due app contemporaneamente sullo schermo diviso. È particolarmente utile quando devi fare ricerche o prendere note durante la lettura di un articolo o la visualizzazione di un video. <br><br>
+
+              Ricorda di fare attenzione quando utilizzi trucchi più avanzati e di seguire le istruzioni correttamente. Esplorare queste funzionalità ti permetterà di personalizzare ulteriormente il tuo dispositivo Android e renderlo più adatto alle tue esigenze. 
+                
             </p>
           </div>
           <div class="box">
@@ -98,19 +123,19 @@
     </div>
     <div class="gallery">
         <div>
-          <img src="img/android/android-versions-kitkat-100740921-large.webp" alt="Immagine 1">
+          <img src="img/android/android-versions-kitkat-100740921-large.jpg" alt="Immagine 1">
           <div class="caption">KitKat</div>
         </div>
         <div>
-          <img src="img/android/android-versions-1-100740912-large.webp" alt="Immagine 2">
+          <img src="img/android/android-versions-1-100740912-large.jpg" alt="Immagine 2">
           <div class="caption">1.0</div>
         </div>
         <div>
-          <img src="img/android/android-versions-android-12-material-you-100889678-orig.webp" alt="Immagine 2">
+          <img src="img/android/android-versions-android-12-material-you-100889678-orig.jpg" alt="Immagine 2">
           <div class="caption">Material You</div>
         </div>
         <div>
-          <img src="img/android/android-versions-honeycomb-100740918-large.webp" alt="Immagine 2">
+          <img src="img/android/android-versions-honeycomb-100740918-large.jpg" alt="Immagine 2">
           <div class="caption">HoneyComb</div>
         </div>
     </div>
@@ -121,10 +146,7 @@
             <div class="footer-divider"></div>
             <div class="footer-line"></div>
             <div class="footer-text">
-                <p>Sei un appassionato d’informatica?</p>
-                <p>Ti piacerebbe collaborare con noi?</p>
-                <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-                <p>e se saremo interessati ti contatteremo!</p>
+                <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
                 <div class="footer-links">
                     <ul>
                       <p>About</p>  
@@ -133,7 +155,6 @@
                     <ul>
                       <p>Help</p>  
                       <li><a href="domande.html">Domande Frequenti</a></li>
-                      <li><a href="contactus.html">Contattaci</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
@@ -142,7 +163,6 @@
                     <a href="https://www.instagram.com" class="social-icon"><i class="fa fa-instagram"></i></a>
                   </div>   
             </div>
-        </footer>       
-    
+        </footer>          
 </body>
 </html>

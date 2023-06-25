@@ -15,15 +15,23 @@
     <script src="js/gallery.js"></script>
 </head>
 <body>
-    <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="android.html">&larr;</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
+  <div class="nav" id="respnav">
+    <a href="index.html" class="active">FrostWire</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sistemi Operativi
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="windows.html">Windows</a>
+        <a href="linux.html">Linux</a>
+        <a href="macos.html">macOS</a>
+        <a href="android.html">Android</a>
+        <a href="ios.html">iOS</a>
       </div>
+
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+  </div> 
       <div class="box-info">
         <h2>Trucchi e Consigli per iOS</h2>
         <p>
@@ -36,7 +44,7 @@
             Questi sono solo alcuni dei trucchi e consigli che puoi applicare su iOS per personalizzare il tuo dispositivo e ottimizzare la tua esperienza. 
         </p>
     </div>
-    <div class="container">
+    <div class="gallery-container">
         <div class="box">
             <div class="so-gold-line"></div>
             <h2>Qualche Trucco per iOS</h2>
@@ -97,23 +105,19 @@
     </div>
     <div class="gallery">
         <div>
-          <img src="img/iphone/Schermata 2023-06-05 alle 18.36.04.png" alt="Immagine 1">
-          <div class="caption">Tom's Hardware</div>
-        </div>
-        <div>
           <img src="img/iphone/iphoneitalia.png" alt="Immagine 2">
           <div class="caption">iPhone iPhoneItalia</div>
         </div>
         <div>
-            <img src="img/iphone/ispazio.webp" alt="Immagine 2">
+            <img src="img/iphone/ispazio.jpg" alt="Immagine 2">
             <div class="caption">iSpazio</div>
           </div>
         <div>
-          <img src="img/iphone/maxresdefault.jpeg" alt="Immagine 2">
+          <img src="img/iphone/maxresdefault.jpg" alt="Immagine 2">
           <div class="caption">iPhone 13</div>
         </div>
         <div>
-          <img src="img/iphone/ios_controlcenter_720.jpeg" alt="Immagine 2">
+          <img src="img/iphone/ios_controlcenter_720.jpg" alt="Immagine 2">
           <div class="caption">Centro di controllo iOS</div>
         </div>
     </div>
@@ -124,10 +128,8 @@
             <div class="footer-divider"></div>
             <div class="footer-line"></div>
             <div class="footer-text">
-                <p>Sei un appassionato d’informatica?</p>
-                <p>Ti piacerebbe collaborare con noi?</p>
-                <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-                <p>e se saremo interessati ti contatteremo!</p>
+                            <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
+
                 
                 <div class="footer-links">
                     <ul>
@@ -137,7 +139,8 @@
                     <ul>
                       <p>Help</p>  
                       <li><a href="domande.html">Domande Frequenti</a></li>
-                      <li><a href="contactus.html">Contattaci</a></li>
+                      
+
                     </ul>
                 </div>
                 <div class="footer-social">

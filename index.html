@@ -13,19 +13,30 @@
 </head>
 <body>
     <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
-      </div>
+        <a href="index.html" class="active">FrostWire</a>
+        <div class="dropdown">
+          <button class="dropbtn">Sistemi Operativi
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="windows.html">Windows</a>
+            <a href="linux.html">Linux</a>
+            <a href="macos.html">macOS</a>
+            <a href="android.html">Android</a>
+            <a href="ios.html">iOS</a>
+          </div>
+        </div>
+        <a href="aboutus.html">Chi Siamo?</a>
+        <a href="javascript:void(0);" class="icon" onclick="respnav()"><i class="fa fa-bars"></i></a>
+      </div> 
+      
       <div class="header">
         <div class="gold-line"></div>
         <h1>Home Page</h1>
     </div>
     <div class="welcome">
-        <h1>Frostwire è gruppo composto da tre persone con la passione per l’informatica. Da anni collaboriamo per aiutare ad orientarvi nelle vostre scelte nel mondo dei Software.</h1>
+        <h1>Windows, Linux, macOS, Android, iOS:
+            Scopri, personalizza, innova, connettiti!</h1>
         <div class="go-down" onclick="scrollToContent()">
             <h1>Vai giù &darr;</h1>
         </div>
@@ -34,7 +45,7 @@
         <section>
             <div class="os-card">
                 <div class="immagine">
-                    <img src="img/os/win.png" alt="Windows">
+                    <a href="windows.html"<> <img src="img/os/win.png" alt="Win"></a>
                 </div>
                 <div class="os-info">
                     <div class="header2">
@@ -59,12 +70,12 @@
                     </div>
                 </div>
                     <div class="immagine">
-                    <img src="img/os/linux.png" alt="Linux">
+                        <a href="linux.html"<> <img src="img/os/linux.png" alt="Linux"></a>
                 </div>
             </div>
             <div class="os-card">
                 <div class="immagine">
-                    <img src="img/os/macos.png" alt="macOS">
+                    <a href="macos.html"<> <img src="img/os/macos.png" alt="macOS"></a>
                 </div>
                 <div class="os-info">
                     <div class="header2">
@@ -89,12 +100,12 @@
                     </div>
                 </div>
                     <div class="immagine">
-                    <img src="img/os/android.png" alt="Android">
+                    <a href="android.html"<> <img src="img/os/android.png" alt="Android"></a>
                 </div>
             </div> 
             <div class="os-card">
                 <div class="immagine">
-                    <img src="img/os/ios.png" alt="Android">
+                    <a href="ios.html"<> <img src="img/os/ios.png" alt="iOS"></a>
                 </div>
                 <div class="os-info">
                     <div class="header2">
@@ -116,10 +127,7 @@
         <div class="footer-divider"></div>
         <div class="footer-line"></div>
         <div class="footer-text">
-            <p>Sei un appassionato d’informatica?</p>
-            <p>Ti piacerebbe collaborare con noi?</p>
-            <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-            <p>e se saremo interessati ti contatteremo!</p>
+            <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
             <div class="footer-links">
                 <ul>
                   <p>About</p>  
@@ -128,7 +136,8 @@
                 <ul>
                   <p>Help</p>  
                   <li><a href="domande.html">Domande Frequenti</a></li>
-                  <li><a href="contactus.html">Contattaci</a></li>
+                  
+
                 </ul>
             </div>
             <div class="footer-social">

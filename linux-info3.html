@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FrostWire - Lo sviluppo di iOS</title>
+    <title>FrostWire - Lo sviluppo di GNU/Linux</title>
     <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,30 +15,42 @@
     <script src="js/gallery.js"></script>
 </head>
 <body>
-    <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
+  <div class="nav" id="respnav">
+    <a href="index.html" class="active">FrostWire</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sistemi Operativi
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="windows.html">Windows</a>
+        <a href="linux.html">Linux</a>
+        <a href="macos.html">macOS</a>
+        <a href="android.html">Android</a>
+        <a href="ios.html">iOS</a>
       </div>
+
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+  </div> 
       <div class="box-info">
-        <h2>Lo sviluppo di iOS</h2>
-        <p>
-          La storia di iOS ha inizio il 29 giugno 2007 con il lancio ufficiale dell'iPhone originale. Tuttavia, l'idea di sviluppare un sistema operativo mobile da parte di Apple risale a diversi anni prima.<br>
+        <h2>Lo sviluppo di GNU/Linux</h2>
+        <p>Linux è un sistema operativo open source, il che significa che il suo codice sorgente è disponibile liberamente e può essere modificato da chiunque. Il suo sviluppo è gestito da una comunità globale di programmatori volontari, coordinati da Linus Torvalds, il creatore di Linux. <br> <br>
 
-          Nel 2005, Steve Jobs, co-fondatore di Apple, ha formato un team segreto chiamato "Project Purple" con l'obiettivo di creare un telefono rivoluzionario che avrebbe integrato una vasta gamma di funzionalità in un dispositivo touchscreen intuitivo. <br>
-
-            Lo sviluppo del sistema operativo iOS è un processo complesso che coinvolge un team di ingegneri, progettisti e sviluppatori presso Apple Inc. Il team di sviluppo di iOS lavora costantemente per migliorare e aggiornare il sistema operativo, introducendo nuove funzionalità, migliorando le prestazioni e la sicurezza , nonché correggendo bug e problemi.<br>
-
-            Il sistema operativo iniziale sviluppato da Apple per l'iPhone originale è stato chiamato "iPhone OS". È stato basato su una versione semplificata del sistema operativo Mac OS X, utilizzato sui computer Mac di Apple. Tuttavia, l'iPhone OS è stato ottimizzato per il funzionamento su dispositivi mobili, con un'interfaccia utente touch-friendly e una maggiore efficienza energetica.<br>
-
-            Nel corso degli anni, con l'introduzione di nuovi dispositivi come l'iPad e l'iPod Touch, il sistema operativo è stato rinominato "iOS" per riflettere la sua ampia applicabilità su più piattaforme.<br>
-
-            Da allora, Apple ha continuato a sviluppare e rilasciare regolarmente nuove versioni di iOS, introducendo funzionalità innovative, migliorando l'esperienza utente e fornendo aggiornamenti di sicurezza.<br>
-
-            Ogni nuova versione di iOS viene presentata durante la Worldwide Developers Conference (WWDC) di Apple e rilasciata per il pubblico nel corso dell'anno.<br>
+          L'evoluzione di Linux inizia nel 1991, quando Torvalds ha scritto il kernel originale come un progetto personale. Nel corso degli anni, grazie al contributo di molti sviluppatori, il sistema operativo si è arricchito di nuove funzionalità e ha migliorato la sua stabilità. <br> <br>
+          
+          La comunità di sviluppatori collabora utilizzando la rete Internet, condivisione del codice sorgente, report di bug e discussioni sulle mailing list. Questa decentralizzazione permette una vasta partecipazione e favorisce un ambiente di sviluppo aperto e collaborativo. <br> <br>
+          
+          Il processo di sviluppo di Linux è basato sul modello "release early, release often" (rilasciare presto, rilasciare spesso). Ciò significa che vengono rilasciate versioni frequenti del sistema operativo, anche se non sono perfette. Questo approccio permette agli sviluppatori di ottenere feedback dagli utenti e di correggere rapidamente eventuali problemi. <br> <br>
+          
+          Linux è altamente modularizzato, il che significa che è composto da diverse componenti che possono essere sviluppate indipendentemente. Questo favorisce la flessibilità e la possibilità di adattare il sistema operativo alle esigenze specifiche. <br> <br>
+          
+          L'architettura di Linux è basata su un kernel monolitico, che gestisce le risorse del sistema e fornisce i servizi di base. Questo kernel è estremamente stabile e può essere eseguito su una vasta gamma di dispositivi, dai computer personali ai server, dai dispositivi mobili agli embedded system. <br> <br>
+          
+          Grazie alla sua natura open source, Linux ha una vasta base di utenti e una vasta comunità di sviluppatori. Ciò ha portato a una vasta selezione di distribuzioni Linux, ciascuna delle quali può essere personalizzata per soddisfare esigenze specifiche. <br> <br>
+          
+          Linux è noto per la sua sicurezza e affidabilità. La sua natura open source consente alla comunità di identificare e correggere rapidamente le vulnerabilità di sicurezza, rendendolo un sistema operativo molto resistente agli attacchi informatici. <br> <br>
+          
+          In conclusione, lo sviluppo di Linux è un processo collaborativo e aperto, guidato da una vasta comunità di programmatori volontari. Grazie a questa collaborazione, Linux è diventato un sistema operativo potente, flessibile e affidabile, utilizzato da milioni di persone in tutto il mondo.</p>   
     </div>
     <div class="header2">
         <div class="gold-line"></div>
@@ -46,30 +58,21 @@
     </div>
     <div class="gallery">
         <div>
-          <img src="img/iphone/marchi.png" alt="Immagine 1">
-          <div class="caption">Le diverse generazioni di marchi</div>
+          <img src="img/linux/linus.jpg" alt="Immagine 1">
+          <div class="caption">Linus</div>
         </div>
         <div>
-          <img src="img/iphone/sistemaoperativo.jpeg" alt="Immagine 2">
-          <div class="caption">Sistema operativo</div>
+          <img src="img/linux/fedora.webp" alt="Immagine 2">
+          <div class="caption">Fedora</div>
         </div>
         <div>
-          <img src="img/iphone/storia_iphone.webp" alt="Immagine 2">
-          <div class="caption">Le diverse generazionid di iPhoe</div>
+          <img src="img/linux/os/voidlinuxxfce.png" alt="Immagine 2">
+          <div class="caption">Void Linux</div>
         </div>
         <div>
-          <img src="img/iphone/All-iPhones-iPhone-13-to-2G-screen-size-and-resolution-comparison-768x357.webp" alt="Immagine 2">
-          <div class="caption">Grandezze e risoluzioni</div>
-        </div>
-        <div>
-          <img src="img/iphone/icone.jpeg" alt="Immagine 2">
-          <div class="caption">Icone </div>
-        </div>
-        <div>
-          <img src="img/iphone/icone1.jpeg" alt="Immagine 2">
-          <div class="caption">Icone</div>
-        </div>
-        
+          <img src="img/linux/th-32077014.jpg" alt="Immagine 2">
+          <div class="caption">Linea di Comando</div>
+        </div>        
     </div>
     <footer>
         <div class="footer-content">
@@ -78,11 +81,7 @@
         <div class="footer-divider"></div>
         <div class="footer-line"></div>
         <div class="footer-text">
-            <p>Sei un appassionato d’informatica?</p>
-            <p>Ti piacerebbe collaborare con noi?</p>
-            <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-            <p>e se saremo interessati ti contatteremo!</p>
-            
+            <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
             <div class="footer-links">
                 <ul>
                   <p>About</p>  
@@ -91,7 +90,8 @@
                 <ul>
                   <p>Help</p>  
                   <li><a href="domande.html">Domande Frequenti</a></li>
-                  <li><a href="contactus.html">Contattaci</a></li>
+                  
+
                 </ul>
             </div>
             <div class="footer-social">

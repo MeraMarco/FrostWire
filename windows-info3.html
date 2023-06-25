@@ -15,15 +15,23 @@
     <script src="js/gallery.js"></script>
 </head>
 <body>
-    <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="windows.html">&larr;</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
+  <div class="nav" id="respnav">
+    <a href="index.html" class="active">FrostWire</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sistemi Operativi
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="windows.html">Windows</a>
+        <a href="linux.html">Linux</a>
+        <a href="macos.html">macOS</a>
+        <a href="android.html">Android</a>
+        <a href="ios.html">iOS</a>
       </div>
+
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+  </div> 
       <div class="box-info">
         <h2>Lo sviluppo Windows</h2>
         <p>
@@ -58,14 +66,6 @@
           <div class="caption"> Sfondo rosso, segnalazione errore - Presente nella beta di Windows Longhorn</div>
         </div>
         <div>
-          <img src="img/windows/Windows_logo_-_2012.svg.png" alt="Immagine 2">
-          <div class="caption">Logo Windows 2012</div>
-        </div>
-        <div>
-          <img src="img/windows/windows_95_theme.avif" alt="Immagine 2">
-          <div class="caption">Tema MS-DOS Windows 95 </div>
-        </div>
-        <div>
           <img src="img/windows/800px-Windows_3.x_logo.svg.png" alt="Immagine 2">
           <div class="caption">Logo Windows 3</div>
         </div>
@@ -73,18 +73,7 @@
           <img src="img/windows/Windows98.png" alt="Immagine 2">
           <div class="caption"> Scrivania Windows 98</div>
         </div>
-        <div>
-          <img src="img/windows/Windows_CartelleDesk_XP (1).png" alt="Immagine 2">
-          <div class="caption">Organizzazione cartelle nel desktop</div>
-        </div>
-        <div>
-            <img src="img/windows/Windows_Server_2003.png" alt="Immagine 2">
-        <div class="caption">Scrivania Windows 2003</div>
-        </div>
-        <div>
-            <img src="img/windows/VistaIT.jpeg" alt="Immagine 2">
-            <div class="caption">Scrivania Windows Vista</div>
-        </div>
+
         <div>
             <img src="img/windows/300px-Windows_3.11_workspace.png" alt="Immagine 2">
         <div class="caption">Scrivania Windows 3.11</div>
@@ -101,10 +90,8 @@
         <div class="footer-divider"></div>
         <div class="footer-line"></div>
         <div class="footer-text">
-            <p>Sei un appassionato d’informatica?</p>
-            <p>Ti piacerebbe collaborare con noi?</p>
-            <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-            <p>e se saremo interessati ti contatteremo!</p>
+                        <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
+
             
             <div class="footer-links">
                 <ul>
@@ -114,7 +101,8 @@
                 <ul>
                   <p>Help</p>  
                   <li><a href="domande.html">Domande Frequenti</a></li>
-                  <li><a href="contactus.html">Contattaci</a></li>
+                  
+
                 </ul>
             </div>
             <div class="footer-social">

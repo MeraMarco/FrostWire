@@ -15,14 +15,23 @@
     <script src="js/gallery.js"></script>
 </head>
 <body>
-    <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
+  <div class="nav" id="respnav">
+    <a href="index.html" class="active">FrostWire</a>
+    <div class="dropdown">
+      <button class="dropbtn">Sistemi Operativi
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="windows.html">Windows</a>
+        <a href="linux.html">Linux</a>
+        <a href="macos.html">macOS</a>
+        <a href="android.html">Android</a>
+        <a href="ios.html">iOS</a>
       </div>
+
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+  </div> 
       <div class="box-info">
         <h2>Il Design Grafico di GNU/Linux</h2>
         <p>Il design grafico di GNU/Linux è un argomento ampio e variegato, poiché coinvolge diversi aspetti del sistema operativo, inclusi l'interfaccia utente, le icone, i temi e molto altro. <br>
@@ -69,14 +78,6 @@
               <div class="caption">KDE 3.0</div>
             </div>
             <div>
-              <img src="img/linux/ui/kde3.1.png" alt="Immagine 2">
-              <div class="caption">KDE 3.1</div>
-            </div>
-            <div>
-              <img src="img/linux/ui/kde3.5.png" alt="Immagine 2">
-              <div class="caption">KDE 3.5</div>
-            </div>
-            <div>
                 <img src="img/linux/ui/kde4.png" alt="Immagine 2">
                 <div class="caption">KDE 4.0 - Chiamato anche Trinity Desktop</div>
             </div>
@@ -85,21 +86,13 @@
                 <div class="caption">KDE 5.0 - Chiamato anche Plasma Desktop</div>
             </div>
             <div>
-                <img src="img/linux/ui/xfce 4.png" alt="Immagine 2">
-                <div class="caption">XFCE 4.0</div>
-            </div>
-            <div>
                 <img src="img/linux/ui/xfce4.18.png" alt="Immagine 2">
                 <div class="caption">XFCE 4.18</div>
             </div>
             <div>
               <img src="img/linux/ui/lxde.png" alt="Immagine 2">
               <div class="caption">LXDE</div>
-            </div>
-            <div>
-                <img src="img/linux/ui/openbox.png" alt="Immagine 2">
-                <div class="caption">Openbox</div>
-            </div>    
+            </div>  
         </div>
         <footer>
             <div class="footer-content">
@@ -108,10 +101,8 @@
             <div class="footer-divider"></div>
             <div class="footer-line"></div>
             <div class="footer-text">
-                <p>Sei un appassionato d’informatica?</p>
-                <p>Ti piacerebbe collaborare con noi?</p>
-                <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-                <p>e se saremo interessati ti contatteremo!</p>
+                            <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
+
                 
                 <div class="footer-links">
                     <ul>
@@ -121,7 +112,8 @@
                     <ul>
                       <p>Help</p>  
                       <li><a href="domande.html">Domande Frequenti</a></li>
-                      <li><a href="contactus.html">Contattaci</a></li>
+                      
+
                     </ul>
                 </div>
                 <div class="footer-social">

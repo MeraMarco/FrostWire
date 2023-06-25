@@ -16,13 +16,22 @@
 </head>
 <body>
     <div class="nav" id="respnav">
-        <a href="index.html">FrostWire</a>
-        <a href="aboutus.html" class="center">Chi Siamo?</a>
-        <a href="contactus.html" class="center">Contattaci</a>
-        <a href="javascript:void(0);" class="icon" onclick="respnav()">
-            <i class="fa fa-bars"></i>
-          </a>
-      </div>
+        <a href="index.html" class="active">FrostWire</a>
+        <div class="dropdown">
+          <button class="dropbtn">Sistemi Operativi
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="windows.html">Windows</a>
+            <a href="linux.html">Linux</a>
+            <a href="macos.html">macOS</a>
+            <a href="android.html">Android</a>
+            <a href="ios.html">iOS</a>
+          </div>
+
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="respnav()">&#9776;</a>
+      </div> 
       <div class="box-info">
         <h2>Trucchi e Consigli per Linux</h2>
         <p>
@@ -37,7 +46,7 @@
             GNU/Linux è un sistema operativo incredibilmente flessibile e personalizzabile. Sperimenta, esplora e divertiti nel trovare nuovi trucchi e consigli che si adattino alle tue esigenze. Approfondire la tua conoscenza di GNU/Linux ti permetterà di ottenere il massimo dal tuo sistema e godere di una piattaforma aperta, potente e collaborativa.
         </p>
     </div>
-    <div class="container">
+    <div class="gallery-container">
         <div class="box">
             <div class="so-gold-line"></div>
             <h2>Spiegazione Comandi Base per il terminale</h2>
@@ -151,10 +160,8 @@
             <div class="footer-divider"></div>
             <div class="footer-line"></div>
             <div class="footer-text">
-                <p>Sei un appassionato d’informatica?</p>
-                <p>Ti piacerebbe collaborare con noi?</p>
-                <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
-                <p>e se saremo interessati ti contatteremo!</p>
+                            <p>Sei un appassionato d’informatica?<br><br>Ti piacerebbe collaborare con noi?<br><br>Compila il form cliccando <a href="form.html" class="footer-form">qui</a><br><br>e se saremo interessati ti contatteremo!</p>
+
                 
                 <div class="footer-links">
                     <ul>
@@ -164,7 +171,8 @@
                     <ul>
                       <p>Help</p>  
                       <li><a href="domande.html">Domande Frequenti</a></li>
-                      <li><a href="contactus.html">Contattaci</a></li>
+                      
+
                     </ul>
                 </div>
                 <div class="footer-social">
